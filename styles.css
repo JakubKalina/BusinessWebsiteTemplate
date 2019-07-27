@@ -17,6 +17,10 @@
     height: 100%;
     overflow-x: hidden;
   }
+
+  .container {
+    display: none;
+  }
   
   h1 {
     font-size: 4rem;
@@ -141,4 +145,24 @@
     .button {
       top: 70%;
     }
+  }
+
+  /*Nawigacja strony 'o nas' */
+  .about-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 250px auto;
+  }
+
+  /*Blok nawigacji strony 'o nas' */
+  .about-navigation-block {
+    width: 200px;
+    height: 200px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    border: 8px solid black;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 26px;
+    text-transform: uppercase;
   }
