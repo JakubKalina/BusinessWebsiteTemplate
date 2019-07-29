@@ -151,18 +151,35 @@
   .about-navigation {
     display: flex;
     flex-wrap: wrap;
+  }
+.align-box{
+    border: 1px solid black;
+    display: flex;
     margin: 250px auto;
   }
 
   /*Blok nawigacji strony 'o nas' */
   .about-navigation-block {
+    text-align: center;
     width: 200px;
     height: 200px;
-    padding: 15px 15px;
-    margin: 20px 20px;
+    padding: 0 15px;
+    margin: 40px 40px;
     border: 8px solid black;
     box-sizing: border-box;
     position: relative;
     font-size: 26px;
     text-transform: uppercase;
+    transition: transform .1s;
+    cursor: pointer;
+  }
+
+  /*Przy najechaniu kursorem na kafelek*/
+  .about-navigation-block:hover {
+    transform: scale(1.4);
+  }
+
+  .about-navigation-block span {
+    position: relative;
+    top: 25%;
   }
